@@ -113,7 +113,7 @@
 
     SELECT ?lineName (COUNT(DISTINCT ?station) AS ?numStations) WHERE {
       ?station rdf:type transport:UndergroundStation ;
-               rdfs:label ?stationName;
+               rdfs:label ?stationName ;
                transport:incomingConnection/transport:onLine ?line .
                ?line rdfs:label ?lineName .
     }
