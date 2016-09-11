@@ -116,8 +116,8 @@
                rdfs:label ?stationName;
                transport:incomingConnection/transport:onLine ?line .
                ?line rdfs:label ?lineName .
-      }
-      GROUP BY ?lineName order by ?numStations
+    }
+    GROUP BY ?lineName order by ?numStations
 
 
 ### Count all the stations on the Bakerloo line south of Oxford Circus
