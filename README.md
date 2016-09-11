@@ -105,7 +105,8 @@
 ### Count the stations
 
     SELECT (COUNT( ?station) AS ?count) WHERE {
-    ?station rdf:type transport:UndergroundStation }
+      ?station rdf:type transport:UndergroundStation
+    }
 
 
 ### Count the tations on each line
