@@ -28,9 +28,6 @@
 
 ### Find All the Underground Lines
 
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX transport: <http://training.epimorphics.com/transport/def/metro/>
-    
     SELECT ?line WHERE {
     
       ?line rdf:type transport:UndergroundLine . 
@@ -39,9 +36,6 @@
 
 ### Find All the Underground Stations
 
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX transport: <http://training.epimorphics.com/transport/def/metro/>
-    
     SELECT ?station WHERE {
     
       ?station rdf:type transport:UndergroundStation . 
@@ -50,10 +44,6 @@
 
 ### What if we wanted their names as well?
 
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX transport: <http://training.epimorphics.com/transport/def/metro/>
-    
     SELECT ?station ?stationName WHERE {
     
       ?station rdf:type transport:UndergroundStation ; 
