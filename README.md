@@ -19,7 +19,7 @@
     prefix passengers: <http://training.epimorphics.com/transport/def/passenger-count/>
     prefix museum: <http://training.epimorphics.com/culture/london/museum/>
     prefix dbpedia: <http://dbpedia.org/ontology/>
-    PREFIX transport: <http://training.epimorphics.com/transport/def/metro/>
+    prefix transport: <http://training.epimorphics.com/transport/def/metro/>
 
 ## Exercises:
 
