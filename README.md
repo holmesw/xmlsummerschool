@@ -95,7 +95,7 @@
     SELECT DISTINCT ?stationName WHERE { 
       ?station rdf:type transport:UndergroundStation ;
                rdfs:label ?stationName ;
-               transport:incomingConnection/transport:onLine lu-line:bakerloo_line ;
+               transport:incomingConnection/transport:onLine lu-l:bakerloo_line ;
                geo:lat ?lat .  
     }
     ORDER BY ASC(?stationName)
@@ -106,7 +106,7 @@
     SELECT DISTINCT ?stationName WHERE { 
       ?station rdf:type transport:UndergroundStation ;
                rdfs:label ?stationName ;
-               transport:incomingConnection/transport:onLine lu-line:bakerloo_line ;
+               transport:incomingConnection/transport:onLine lu-l:bakerloo_line ;
                geo:lat ?lat .  
     }
     ORDER BY DESC(?lat)
@@ -134,9 +134,9 @@
     SELECT (COUNT(DISTINCT ?station) AS ?numStations) WHERE {
       ?station rdf:type transport:UndergroundStation ;
                rdfs:label ?stationName ;
-               transport:incomingConnection/transport:onLine lu-line:bakerloo_line ;
+               transport:incomingConnection/transport:onLine lu-l:bakerloo_line ;
                geo:lat ?lat .
-      lu-station:oxford_circus geo:lat ?oc_lat .
+      lu-s:oxford_circus geo:lat ?oc_lat .
       FILTER ( ?lat < ?oc_lat)
     }
 
