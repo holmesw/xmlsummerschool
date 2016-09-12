@@ -118,7 +118,7 @@
     }
 
 
-### Count the tations on each line
+### Count the stations on each line
 
     SELECT ?lineName (COUNT(DISTINCT ?station) AS ?numStations) WHERE {
       ?station rdf:type transport:UndergroundStation ;
