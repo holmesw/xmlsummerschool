@@ -29,7 +29,6 @@
 ### Find All the Underground Lines
 
     SELECT ?line WHERE {
-    
       ?line rdf:type transport:UndergroundLine . 
     }
 
@@ -37,7 +36,6 @@
 ### Find All the Underground Stations
 
     SELECT ?station WHERE {
-    
       ?station rdf:type transport:UndergroundStation . 
     }
 
@@ -45,7 +43,6 @@
 ### What if we wanted their names as well?
 
     SELECT ?station ?stationName WHERE {
-    
       ?station rdf:type transport:UndergroundStation ; 
                rdfs:label ?stationName . 
     }
