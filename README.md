@@ -26,6 +26,20 @@
 <http://training.epimorphics.com/course-materials/1-5-QueryingLinkedData.pdf>
 
 
+### Is 'Angel' an Underground Station?
+
+    ASK { 
+      lu-s:angel a transport:UndergroundStation 
+    }
+
+
+### What information do we have about the 'Angel' Underground Station?
+
+    DESCRIBE { 
+      lu-s:angel
+    }
+
+
 ### Find All the Underground Lines
 
     SELECT ?line WHERE {
@@ -127,4 +141,3 @@
       lu-s:oxford_circus geo:lat ?oc_lat .
       FILTER ( ?lat < ?oc_lat)
     }
-
