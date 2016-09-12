@@ -26,18 +26,16 @@
 <http://training.epimorphics.com/course-materials/1-5-QueryingLinkedData.pdf>
 
 
-### Is 'Angel' an Underground Station?
+### Is 'Paddington' an Underground Station?
 
     ASK { 
-      lu-s:angel a transport:UndergroundStation 
+      lu-s:paddington a transport:UndergroundStation 
     }
 
 
-### What information do we have about the 'Angel' Underground Station?
+### What information do we have about the 'Paddington' Underground Station?
 
-    DESCRIBE { 
-      lu-s:angel
-    }
+    DESCRIBE lu-s:paddington
 
 
 ### Find All the Underground Lines
